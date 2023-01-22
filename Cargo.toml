@@ -1,0 +1,19 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+edition = "2021"
+
+[target.'cfg(all(random = "builtin"))']
+rustflags = ["...", "..."]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"
+rgb = "0.8"
+image = "0.24.3"
+
+# [dependencies.sdl2]
+# version = "0.35"
+# features = [
+#    "bundled"
+# ]
